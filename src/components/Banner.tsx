@@ -11,9 +11,9 @@ const Banner=()=>{
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        speed: 500, // ms
+        speed: 1000, // ms
         autoplay:true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 4000,
         dots:true
     }
  
@@ -29,7 +29,7 @@ const Banner=()=>{
                                             <p>{item.description}</p>
                                         </div>
                                         <div className="sliderImageWrapper">
-                                            <img src={item.url}/>
+                                            <img className="sliderImg" src={item.url}/>
                                         </div>
                                     </div>
                                 )
