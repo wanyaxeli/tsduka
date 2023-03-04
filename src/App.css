@@ -1,38 +1,442 @@
 .App {
   text-align: center;
+  height: auto;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #f2f2f2;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logoWrapper{
+  width:auto;
+  height: 30px;
+}
+.logoWrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  cursor: pointer;
+}
+header,.bannerWrapper,.NavIconWrapper{
   display: flex;
-  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+}
+.NavIconWrapper .fa{
+  color: #fff;
+   cursor: pointer;
+   font-size: 1.6rem;
+}
+.NavIconWrapper p{
+  color: #fff;
+}
+.logoInputWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: .7;
+}
+.logoInputWrapper input,.logoInputWrapper button{
+   outline: none;
+   border: none;
+   height: 30px;
+   padding: 0 10px;
+}
+.logoInputWrapper input{
+  width: 500px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.logoInputWrapper button{
+  cursor: pointer;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.NavIconWrapper .fa:first-child{
+  margin-right: 35px;
+}
+header{
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+.navbarWrapper{
+  max-width: 100%;
+  height: 50px;
+  background-color: #231f20;
+}
+.bannerWrapper{
+  max-width: 1200px;
+  height: auto;
+  margin:25px auto;
+  align-items: initial;
+}
+.bannerContainer{
+  flex: .65;
+  height: 520px;
+  border-radius: 10px;
+}
+.slider{
+  max-width: 800px;
+  height: 440px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: block !important;
+}
+.sliderContentWrapper{
+  width: 100%;
+  height: 440px;
+  border-radius: 10px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  display: block ;
+}
+.sliderContainer{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+.sliderTextWrapper,.sliderImageWrapper{
+  flex: .45;
+  height: 100%;
+}
+.sliderImageWrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bannerBar{
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.bannerWrapper aside{
+  flex: .33;
+  height: 520px;
+}
+.asideItemWrapper{
+ width: 100%;
+ height: 250px;
+ background-color: aqua;
+ margin-bottom: 20px;
+ border-radius: 10px;
+}
+.iconDisplayer{
+  max-width: 100%;
+  height: 80px;
+  background-color: #fff;
+  margin: 20px 0;
+}
+.productsWrapper{
+  max-width: 1000px;
+  margin: 10px auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.cardWrapper{
+  width: 235px;
+  height: 200px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.productPicwrapper{
+  width: 100%;
+  height: 80%;
+   padding: 10px;
+}
+.productPicwrapper img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.cardWrapper p{
+  text-transform: capitalize;
+}
+.productWrapper{
+  max-width: 1000px;
+  margin:10px auto;
+  height: auto;
+  display:flex ;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.productCard{
+ width: 235px;
+ height: 380px;
+ background-color: #fff;
+ border-radius: 10px;
+} 
+.itemCardImage{
+  height: 60%;
+  width: 100%;
+  padding: 10px;
+}
+.itemCardImage img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.cardIconWrapper{
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.iconContainer{
+  width: 30px;
+  height: 30px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin-top: -25px;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.ItemcardWrapper{
+  text-align: start;
+  padding: 0 10px ;
+}
+.ItemcardWrapper h5{
+  margin: 5px 0;
+}
+.loadingtext{
+  text-align: center;
+}
+.ItemcardWrapper button{
+  width: 100%;
+  height: 30px;
+  margin-top:5px ;
+  text-transform: capitalize;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+.ItemcardWrapper button:hover{
+  border: none;
+  background-color: green;
+  color: #fff;
+}
+.ItemcardWrapper h3{
+  text-transform: capitalize;
+}
+.cartWrapper{
+  max-width: 1000px;
+  height: auto;
+  margin:10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: initial;
+  overflow-y: auto;
+}
+.cartItemWrapper{
+  flex: .65;
+  height: auto;
+}
+.cartWrapper aside{
+  flex: .33;
+  height: 130px;
+  text-align: start;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.cart{
+  max-width: 90%;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  align-items: initial;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.cartImage{
+  flex: .35;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+.cartContentWrapper{
+  flex: .63;
+  height: auto;
+  padding: 15px 10px;
+}
+.cartNameWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartNameWrapper span{
+  font-size: 2rem;
+  cursor: pointer;
+  color: red;
+}
+.cartBtnWrapper,.btn-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cartBtnWrapper{
+  margin-top: 10px;
+}
+.btn-wrapper button{
+  width: 30px;
+  height: 25px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid green;
+}
+.btn-wrapper button:hover{
+  border: none;
+  background-color: green;
+  color: #fff;
+}
+.btn-wrapper button:first-child{
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.btn-wrapper button:last-child{
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.cartNameWrapper h3{
+  text-transform: capitalize;
+}
+.btn-wrapper span{
+   padding: 1px 10px;
+  border-bottom: 1px solid green;
+  border-top: 1px solid green;
+  display: block;
+}
+.cartImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.totalWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkoutBanner{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.checkoutBanner button{
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  border: 1px solid green;
+  outline: none;
+  border-radius: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkoutBanner button:hover{
+  background-color: green;
+  border: none;
+  color: #fff;
+}
+.emptyCart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+.emptyCart p{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.emptyCart button{
+  padding: 10px 20px;
+  text-transform: capitalize;
+  outline: none;
+  border: 1px solid green;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.emptyCart button:hover{
+  background-color: green;
+  color: #fff;
+}
+.commentWrapper{
+  max-width: 1200px;
+  height: auto;
+  margin:15px auto 25px auto;
+  display: block;
+}
+.commentContainer{
+  text-align: center;
+  max-width: 550px;
+  background-color: #fff;
+  height: 200px;
+  border-radius: 10px;
+  display:block;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+}
+.customer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sliderImageWrapper{
+  width: 100%;
+   margin-top: 25px;
+  height: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column
+}
+.personName h4{
+  text-transform: capitalize;
+}
+.personImage{
+  width: 60px;
+  height: 60px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.personImage img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.commentContainer p{
+ margin-top: 5px;
+}
+.commentContainer p::first-letter{
+  text-transform: capitalize;
 }
