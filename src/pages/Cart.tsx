@@ -2,10 +2,15 @@ import React,{useState,useEffect} from "react";
 import pic from '../assets/pic1.jpg'
 import { Icart } from "./Items";
 import { useNavigate } from "react-router-dom";
+interface Iarr{
+    price:number
+}
 const Cart=()=>{
     const [cart,setCart]=useState<Icart[]>([])
     const [price,setPrice]=useState<number>()
+    const [arrPrice,setArrPrice]=useState<number[]>()
     const [total,setTotal]=useState<number>()
+    const [ttl,setTtl]=useState()
     let newCart:Icart[]=cart.flat()
     const navagate=useNavigate()
     const [priceArray,setPriceArray]=useState<number>()
@@ -32,6 +37,7 @@ const Cart=()=>{
         if(decreQuantity?.quantity !== undefined){
             decreQuantity.quantity --
             getPrice()
+            getAllTotal ()
         }
        }
     }
@@ -41,6 +47,7 @@ const Cart=()=>{
             if (decreQuantity?.quantity<= decreQuantity?.stock){
                 decreQuantity.quantity ++
                 getPrice()
+                getAllTotal ()
             }  
         }
     }
@@ -56,14 +63,25 @@ const Cart=()=>{
     function getPrice():void{
        newCart.forEach(item=>{
         let price = item.price * item.quantity
-        setPrice(price)
-       })   
+        setPrice(price)  
+       }) 
+    //    let initprice = newCart.map(item=>item.price * item.quantity) 
+    //    setArrPrice(initprice) 
+    }
+    function getAllTotal (){
+      let t=arrPrice?.reduce((acu,cur)=>{
+           if(acu!==undefined){
+            return acu + cur
+           }
+        },total)
+        console.log(t)
     }
     console.log(price)
     useEffect(()=>{
         getPrice()
         getTotal()
-    },)
+        
+    })
     if(newCart.length===0){
         return(
             <div className="emptyCart">
