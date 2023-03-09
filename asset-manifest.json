@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/tsduka/static/css/main.981b4f4b.css",
+    "main.js": "/tsduka/static/js/main.35177eb1.js",
+    "static/js/787.191f0af9.chunk.js": "/tsduka/static/js/787.191f0af9.chunk.js",
+    "static/media/pic10.jpg": "/tsduka/static/media/pic10.91d936d7388ff651be2c.jpg",
+    "static/media/seat1.jpg": "/tsduka/static/media/seat1.cc8728d3ba76001e5331.jpg",
+    "static/media/pic2.jpg": "/tsduka/static/media/pic2.0d97c3bea1cc59905e55.jpg",
+    "static/media/pic6.jpg": "/tsduka/static/media/pic6.d58c8cb6d1fbd1464871.jpg",
+    "static/media/pic4.jpg": "/tsduka/static/media/pic4.72893986e9d27eb32b67.jpg",
+    "static/media/pic9.jpg": "/tsduka/static/media/pic9.57da6fcb962917d59441.jpg",
+    "static/media/pic11.jpg": "/tsduka/static/media/pic11.9eb55645e2b135c208d3.jpg",
+    "static/media/seat3.jpg": "/tsduka/static/media/seat3.335dde108593dc595f5e.jpg",
+    "static/media/pic3.jpg": "/tsduka/static/media/pic3.079d234f18026389bb9b.jpg",
+    "static/media/pic8.jpg": "/tsduka/static/media/pic8.524fcca1b9b53fcf6c27.jpg",
+    "static/media/pic.jpg": "/tsduka/static/media/pic.64df6f405733aee1fe05.jpg",
+    "static/media/seat.jpg": "/tsduka/static/media/seat.76f57629f5ff51d1c9bb.jpg",
+    "static/media/pic7.jpg": "/tsduka/static/media/pic7.db18e2ee2b202819d740.jpg",
+    "static/media/pic1.jpg": "/tsduka/static/media/pic1.b02626a476182ac809b7.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/tsduka/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/tsduka/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/tsduka/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/click.png": "/tsduka/static/media/click.002d91b6b37d06f3b8ef.png",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/tsduka/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/tsduka/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/c1.jpg": "/tsduka/static/media/c1.2315583d6ac9c08247a0.jpg",
+    "static/media/c2.jpg": "/tsduka/static/media/c2.43d933481a59dc7eb5b6.jpg",
+    "static/media/slick.svg": "/tsduka/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/tsduka/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/tsduka/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/tsduka/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/tsduka/index.html",
+    "main.981b4f4b.css.map": "/tsduka/static/css/main.981b4f4b.css.map",
+    "main.35177eb1.js.map": "/tsduka/static/js/main.35177eb1.js.map",
+    "787.191f0af9.chunk.js.map": "/tsduka/static/js/787.191f0af9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.981b4f4b.css",
+    "static/js/main.35177eb1.js"
+  ]
+}
